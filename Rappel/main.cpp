@@ -5,21 +5,28 @@ using namespace std;
 int main()
 {
 
-    cout <<"Devine le prix\n"<<endl;
-// Chiffre ou num�ro � deviner
-    auto aDeviner(158);
+// Chiffre ou numéro à deviner
+   auto aDeviner(158);
 //Saisie de la personne qui devine le prix
     auto SaisiaDeviner(0);
-//Boucle indiquant le nombre d'essai
-    auto NombreEssai(1);
+
+//Variable pour générer un nombre différent pour vhaque partie
+
+
+    cout <<"Devine le prix\n"<<endl;
+
 
     cin>> SaisiaDeviner;
 
+
+
 //Boucle for pour jouer que 3 fois d'affiler
 for(auto Parti=0;Parti<3;Parti++){
-        NombreEssai = 0;
+    //Boucle indiquant le nombre d'essai
+      auto  NombreEssai = 0;
     do
     {
+
         if(SaisiaDeviner == aDeviner )
         {
             cout <<"C'est gagner"<<endl;
@@ -44,6 +51,8 @@ for(auto Parti=0;Parti<3;Parti++){
     while(SaisiaDeviner!= aDeviner);
 
     cout <<"Tu as gagne en "<< NombreEssai <<" Essaie"<< endl;
+
 }
 
 }
+
