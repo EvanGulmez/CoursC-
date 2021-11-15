@@ -10,6 +10,7 @@ int main()
 
     auto aDeviner(158);
     auto SaisiaDeviner(0);
+    auto Boucle(1);
     cin>> SaisiaDeviner;
 
    // cout<< aDeviner;
@@ -31,5 +32,13 @@ do {
         cout <<"Moins"<<endl;
         cin>> SaisiaDeviner;
         }
+
+
+
+        Boucle++;
 }while(SaisiaDeviner!= aDeviner);
+
+cout <<"Tu as gagne en "<< Boucle <<" Essaie"<< endl;
+
+
 }
