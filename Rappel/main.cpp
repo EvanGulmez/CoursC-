@@ -13,11 +13,23 @@ int main()
     cin>> SaisiaDeviner;
 
    // cout<< aDeviner;
-
-    if(SaisiaDeviner != aDeviner ){
-
-       printf("Ce n'est pas le bon prix");
-
-
+do {
+    if(SaisiaDeviner == aDeviner )
+    {
+        cout <<"C'est gagner"<<endl;
+        cin>> SaisiaDeviner;
     }
+
+        else if (SaisiaDeviner < aDeviner)
+            {
+             cout << "Plus" << endl;
+             cin>> SaisiaDeviner;
+            }
+
+        else if (SaisiaDeviner >aDeviner)
+        {
+        cout <<"Moins"<<endl;
+        cin>> SaisiaDeviner;
+        }
+}while(SaisiaDeviner!= aDeviner);
 }
