@@ -1,26 +1,37 @@
 #include <iostream>
 
 using namespace std;
-enum class ChoixMenu{ JOUER = 'j', QUITTER = 'q'};
+enum class ChoixMenu{ JOUER = 'j', QUITTER = 'q', INCORRECT};
 int main()
 {
 
     cout << "Bienvenue au juste prix" << endl;
-
     cout <<static_cast<char>(ChoixMenu::JOUER)<< ": jouer" << endl;
     cout <<static_cast<char>(ChoixMenu::QUITTER)<< ": quitter" << endl;
 
     const auto BORNE_MAX(10'000);
     const auto BORNE_MIN(0);
 
-    auto choix{static_cast<char>(ChoixMenu::JOUER)}; // autre type, apostrophe simple caractère
+    auto choix{ChoixMenu::JOUER}; // autre type, apostrophe simple caractère
 
-    cin >> choix;
+    char SaisieChoix;
 
+    cin >> SaisieChoix;
+
+    if(SaisieChoix == static_cast<char>(ChoixMenu::JOUER) || SaisieChoix == static_cast<char>(ChoixMenu::QUITTER))
+    {
+       choix = static_cast<ChoixMenu>(SaisieChoix);
+    }
+
+    else
+    {
+        choix = ChoixMenu::INCORRECT;
+
+    }
     switch (choix)
     {
 
-        case 'j':
+        case ChoixMenu::JOUER:
 
         cout << "C'est parti ! " << endl;
 
@@ -66,7 +77,10 @@ int main()
         }
 
         break;
+        case ChoixMenu::QUITTER:
+        case ChoixMenu::INCORRECT:
         default :
+
 
         cout << "Au revoir " << endl;
         break;
