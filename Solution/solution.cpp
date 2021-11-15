@@ -11,6 +11,10 @@ int main()
 
     const auto BORNE_MAX(10'000);
     const auto BORNE_MIN(0);
+    const auto Parti1(208);
+    const auto Parti2(42);
+    const auto Parti3(1984);
+
 
     auto choix{ChoixMenu::JOUER}; // autre type, apostrophe simple caractère
 
@@ -35,7 +39,8 @@ int main()
 
         cout << "C'est parti ! " << endl;
 
-        for (auto aDeviner : {208, 42, 1984})
+
+        for (auto aDeviner : {Parti1, Parti2, Parti3})
         {
 
             auto proposition{0};
