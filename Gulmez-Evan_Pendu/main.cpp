@@ -30,13 +30,13 @@ int main()
         cout << "Tapez une lettre" << endl;
 
 
-        if (Proposotion == MotCache(i))
-        {
-            cout<<"tu as trouvé une lettre"<<endl;
-        }
+      //  if (Proposotion == MotCache(i))
+        //{
+          //  cout<<"tu as trouvé une lettre"<<endl;
+        //}
         for (i=0; i<3; i++)
         {
-            if()
+            MotCache[i];
         }
     }
 
@@ -51,7 +51,7 @@ while (Nbressai <= 12) //&& !gagne(Lettretrouve))
     {
             if(Lettretrouve)
             {
-            cout<<Mot<<endl;
+            cout<<MotCache<<endl;
 
             }
             else
@@ -61,14 +61,14 @@ while (Nbressai <= 12) //&& !gagne(Lettretrouve))
             cout<<"tapez une lettre"<<endl;
             Proposotion=0;
 
-            if (!rechercheLettre(Proposotion, MotCache, Lettretrouve))
-        {
-            Nbressai--;
-        }
+           // if (!rechercheLettre(Proposotion, MotCache, Lettretrouve))
+        //{
+          //  Nbressai--;
+        //}
     }
 }
 
-  if (gagne(Lettretrouve))
+ /* if (gagne(Lettretrouve))
     {
         cout>>"Tu as gagne le mot est: ">>MotCache>>endl;
     else{
@@ -77,9 +77,9 @@ while (Nbressai <= 12) //&& !gagne(Lettretrouve))
 
     return 0;
     }
-    }
+    }*/
 
-    int gagne(int LettreTrouve[])
+ /*   int gagne(int LettreTrouve[])
     {
     int i = 0;
     int joueurGagne = 1;
@@ -109,5 +109,5 @@ while (Nbressai <= 12) //&& !gagne(Lettretrouve))
     }
 
     return bonneLettre;
-    }
+    }*/
 }
