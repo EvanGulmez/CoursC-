@@ -5,34 +5,9 @@
 using namespace std;
 /************************************************************************************************************************************************/
 
-enum class ChoixMenu
-{
-    JOUER = 'a',
-    JOUER_FACILE = 'b',
-    JOUER_TROIS_PARTIES = 'c',
-    QUITTER = 'q',
-    INCORRECT
-};
 
 
-ChoixMenu demanderChoixMenu()
-{
-    char saisieChoix;
-    cin >> saisieChoix;
-    if (saisieChoix == static_cast<char>(ChoixMenu::JOUER) || saisieChoix == static_cast<char>(ChoixMenu::JOUER_FACILE) || saisieChoix == static_cast<char>(ChoixMenu::JOUER_TROIS_PARTIES) || saisieChoix == static_cast<char>(ChoixMenu::QUITTER))
-    {
-        return static_cast<ChoixMenu>(saisieChoix);
-    }
-    else
-    {
-        return ChoixMenu::INCORRECT;
-    }
-}
 
-/*void demanderProposition(int &proposition)
-{
-   // cin >> proposition;
-}*/
 
 void jouerPartie(int leJustePrix, int max)
 {
@@ -84,14 +59,10 @@ void jouerTroisParties()
     }
 }
 
-void afficherMenu()
-{
-    cout << static_cast<char>(ChoixMenu::JOUER) << ": Jouer mode: NORMALE" << endl;
-    // on ajoute les choix possible à l'affichage
-    cout << static_cast<char>(ChoixMenu::JOUER_FACILE) << ": Jouer mode: FACILE" << endl;
-    cout << static_cast<char>(ChoixMenu::JOUER_TROIS_PARTIES) << ": Jouer Trois Partie" << endl;
-    cout << static_cast<char>(ChoixMenu::QUITTER) << ": Quitter" << endl;
-}
+
+
+//array<int, cte>scores(1,2,3,)
+//scores[0]
 
 int main()
 {
