@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1636813598 source:c:\users\porta\programmation\isitech\lejusteprix_fin\jeu.cpp
+	"jeu.h"
+	<iostream>
+	<chrono>
+	"constantes.h"
+
+1636813598 c:\users\porta\programmation\isitech\lejusteprix_fin\jeu.h
+	<array>
+	"constantes.h"
+
+1636813598 c:\users\porta\programmation\isitech\lejusteprix_fin\constantes.h
+
+1636813598 source:c:\users\porta\programmation\isitech\lejusteprix_fin\menu.cpp
+	"menu.h"
+	<iostream>
+
+1636813598 c:\users\porta\programmation\isitech\lejusteprix_fin\menu.h
+
+1637062332 source:c:\users\porta\programmation\isitech\lejusteprix_fin\main.cpp
+	<iostream>
+	<array>
+	<random>
+	"constantes.h"
+	"jeu.h"
+	"menu.h"
+
+1636813598 source:c:\ecole-isitech\lejusteprix_fin\jeu.cpp
+	"jeu.h"
+	<iostream>
+	<chrono>
+	"constantes.h"
+
+1636813598 c:\ecole-isitech\lejusteprix_fin\jeu.h
+	<array>
+	"constantes.h"
+
+1636813598 c:\ecole-isitech\lejusteprix_fin\constantes.h
+
+1637062542 source:c:\ecole-isitech\lejusteprix_fin\main.cpp
+	<iostream>
+	<array>
+	<random>
+	"constantes.h"
+	"jeu.h"
+	"menu.h"
+
+1636813598 c:\ecole-isitech\lejusteprix_fin\menu.h
+
+1636813598 source:c:\ecole-isitech\lejusteprix_fin\menu.cpp
+	"menu.h"
+	<iostream>
+
