@@ -3,5 +3,9 @@
 
 void demanderProposition(int &proposition);
 
+void jouerPartie(int leJustePrix, int max);
+
+void jouerTroisParties();
+
 
 #endif // JEU_H_INCLUDED
