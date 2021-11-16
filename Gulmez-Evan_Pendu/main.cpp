@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
 #include "constante.h"
-
+/*************************************************************************************
+Variable: - Mot à Deviner  ("") caractère ('') string
+*************************************************************************************/
 using namespace std;
 
 //Lettre saisi par le joueur pour deviner le mot du pendu
@@ -27,13 +29,20 @@ int main()
     {
         cout << "Tapez une lettre" << endl;
 
-        if (Proposotion = MotCache(i))
+
+        if (Proposotion == MotCache(i))
         {
-            cout<<"tu as trouvé une lettre"<<endl
+            cout<<"tu as trouvé une lettre"<<endl;
+        }
+        for (i=0; i<3; i++)
+        {
+            if()
         }
     }
 
-/*while (Nbressai <= 12) //&& !gagne(Lettretrouve))
+
+
+while (Nbressai <= 12) //&& !gagne(Lettretrouve))
 
 {
 
@@ -42,14 +51,14 @@ int main()
     {
             if(Lettretrouve)
             {
-            //cout>>Mot>>endl;
+            cout<<Mot<<endl;
 
             }
             else
             {
-            //cout>>"_">>endl;
+            cout<<"_"<<endl;
             }
-            //cout>>"tapez une lettre">>endl;
+            cout<<"tapez une lettre"<<endl;
             Proposotion=0;
 
             if (!rechercheLettre(Proposotion, MotCache, Lettretrouve))
@@ -59,12 +68,12 @@ int main()
     }
 }
 
- /* if (gagne(Lettretrouve))
+  if (gagne(Lettretrouve))
     {
-        cout>>"Tu as gagne le mot est: ">>Mot>>endl;
+        cout>>"Tu as gagne le mot est: ">>MotCache>>endl;
     else{
 
-        cout>>"Tu as perdu. Le mot a deviner etait: ">>Mot>>endl;
+        cout>>"Tu as perdu. Le mot a deviner etait: ">>MotCache>>endl;
 
     return 0;
     }
@@ -84,15 +93,15 @@ int main()
     return joueurGagne;
     }
 
-    int rechercheLettre(char Proposotion, char Mot[], int LettreTrouve[])
+    int rechercheLettre(char Proposotion, char MotCache[], int LettreTrouve[])
     {
     int i = 0;
     int bonneLettre = 0;
 
     // On parcourt motSecret pour vérifier si la lettre proposée y est
-    for (i = 0 ; Mot[i] != '\0' ; i++)
+    for (i = 0 ; MotCache[i] != '\0' ; i++)
     {
-        if (Proposotion == Mot[i]) // Si la lettre y est
+        if (Proposotion == MotCache[i]) // Si la lettre fait partie du mot a deviner
         {
             bonneLettre = 1; // On mémorise que c'était une bonne lettre
             LettreTrouve[i] = 1; // On met à 1 la case du tableau de booléens correspondant à la lettre actuelle
@@ -100,5 +109,5 @@ int main()
     }
 
     return bonneLettre;
-    }*/
+    }
 }
