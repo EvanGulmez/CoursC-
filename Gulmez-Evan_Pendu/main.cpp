@@ -1,20 +1,39 @@
 #include <iostream>
+#include <string>
 #include "constante.h"
 
 using namespace std;
 
+//Lettre saisi par le joueur pour deviner le mot du pendu
 char Proposotion(0) ;
-auto Mot = ("oui");
+//Le Mot à deviner du pendu
+string MotCache = ("oui");
+//Le Mot saisi se rempli avec les bonnes lettres que le joueur à proposer pour devenir identique au mot cache
+string MotSaisi ;
+//tableau du MotCache (mot a deviner)
 int Lettretrouve[3];
+//Nombre d'essai avant que la partie soit perdu
 int Nbressai(0);
+// Sert a return une valeur quand la partie est gagné
 int gagne(0);
+//Sert à connaitre la valeur de laquelle on se trouve dans le tableau
 int i(0);
 
 
 int main()
 {
 
-while (Nbressai <= 12) //&& !gagne(Lettretrouve))
+    while (Nbressai <= 12 && MotSaisi!= MotCache)
+    {
+        cout << "Tapez une lettre" << endl;
+
+        if (Proposotion = MotCache(i))
+        {
+            cout<<"tu as trouvé une lettre"<<endl
+        }
+    }
+
+/*while (Nbressai <= 12) //&& !gagne(Lettretrouve))
 
 {
 
@@ -24,6 +43,7 @@ while (Nbressai <= 12) //&& !gagne(Lettretrouve))
             if(Lettretrouve)
             {
             //cout>>Mot>>endl;
+
             }
             else
             {
@@ -32,7 +52,7 @@ while (Nbressai <= 12) //&& !gagne(Lettretrouve))
             //cout>>"tapez une lettre">>endl;
             Proposotion=0;
 
-            if (!rechercheLettre(Proposotion, Mot, Lettretrouve))
+            if (!rechercheLettre(Proposotion, MotCache, Lettretrouve))
         {
             Nbressai--;
         }
@@ -48,9 +68,9 @@ while (Nbressai <= 12) //&& !gagne(Lettretrouve))
 
     return 0;
     }
-    }*/
+    }
 
-   /* int gagne(int LettreTrouve[])
+    int gagne(int LettreTrouve[])
     {
     int i = 0;
     int joueurGagne = 1;
@@ -62,7 +82,7 @@ while (Nbressai <= 12) //&& !gagne(Lettretrouve))
     }
 
     return joueurGagne;
-    }*/
+    }
 
     int rechercheLettre(char Proposotion, char Mot[], int LettreTrouve[])
     {
@@ -80,5 +100,5 @@ while (Nbressai <= 12) //&& !gagne(Lettretrouve))
     }
 
     return bonneLettre;
-    }
+    }*/
 }
