@@ -1,5 +1,7 @@
 #include <iostream>
 #include "constante.h"
+#include "jeu.h"
+#include "AfficherMenu.h"
 using namespace std;
 /************************************************************************************************************************************************/
 
@@ -27,10 +29,10 @@ ChoixMenu demanderChoixMenu()
     }
 }
 
-void demanderProposition(int &proposition)
+/*void demanderProposition(int &proposition)
 {
-    cin >> proposition;
-}
+   // cin >> proposition;
+}*/
 
 void jouerPartie(int leJustePrix, int max)
 {
@@ -93,8 +95,7 @@ void afficherMenu()
 
 int main()
 {
-    const auto BORNE_MIN{0};
-    const auto BORNE_MAX{10'000};
+
     cout << "Bienvenue au juste prix" << endl;
 
     // on créé un booléen continuer

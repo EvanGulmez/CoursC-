@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1637054632 source:c:\ecole-isitech\solution_c\main.cpp
+	<iostream>
+	"constante.h"
+	"jeu.h"
+	"AfficherMenu.h"
+
+1637052150 c:\ecole-isitech\solution_c\constante.h
+
+1637053704 source:c:\ecole-isitech\solution_c\affichermenu.cpp
+	<iostream>
+	"constante.h"
+	"AfficherMenu.h"
+
+1637052931 c:\ecole-isitech\solution_c\affichiermenu.h
+
+1637053885 c:\ecole-isitech\solution_c\affichermenu.h
+
+1637054847 c:\ecole-isitech\solution_c\jeu.h
+
+1637054875 source:c:\ecole-isitech\solution_c\jeu.cpp
+	"constante.h"
+	"jeu.h"
+	<iostream>
+
