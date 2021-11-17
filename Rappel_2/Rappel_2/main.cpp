@@ -48,6 +48,11 @@ int main()
    // cout<<"Donne la première valeur: "<<mylist.front()<<endl;
    //cout<<"Donne la dernière valeur: "<<mylist.back()<<endl;
 
+   for(list<int>::iterator it = mylist.begin() ; it != mylist.end(),it++)
+   {
+       cout<<*it<<endl;
+   }
+
     list<int>::iterator itl = mylist.begin();
 
     itl++;
