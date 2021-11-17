@@ -4,16 +4,20 @@
 
 using namespace std;
 
+//Fonction qui sert à prendre en compte le choix du joueur dans le menu
 ChoixMenu demanderChoixMenu() {
     char SaisiChoix;
     cin >> SaisiChoix;
-    if(SaisiChoix == static_cast<char>(ChoixMenu::JOUER) ||  SaisiChoix == static_cast<char>(ChoixMenu::QUITTER)) {
+    if(SaisiChoix == static_cast<char>(ChoixMenu::JOUER) ||  SaisiChoix == static_cast<char>(ChoixMenu::QUITTER))
+    {
         return static_cast<ChoixMenu>(SaisiChoix);
-    } else {
+    }
+    else
+    {
         return ChoixMenu::INCORRECT;
     }
 }
-
+//Fonction qui affiche le menu au début du jeu
 void afficherMenu() {
     cout<<" PPPPP  EEEE   NN   N   DDDD    U   U  "<<endl;
     cout<<" P   P  E      N N  N   D   D   U   U    "<<endl;

@@ -19,7 +19,7 @@ int gagne(0);
 //Sert à connaitre la valeur de laquelle on se trouve dans le tableau
 int i(0);
 
-void demanderProposition(int& proposition) {
+void demanderProposition(char proposition) {
     cin >> proposition;
 }
 
@@ -54,14 +54,18 @@ int jouerPartie(char lettre)
 
 
             Nbressai++;
-            if(proposition == MotCache[i]) {
-                cout << "Bravo !" << endl;
-            } else {
-                cout << "Perdu !" << endl;
+            if(proposition == MotCache[i])
+            {
+                cout << " Bravo !" << endl;
+                cout<<MotCache[i]<<"\n"<<endl;
+            }
+            else
+            {
+                cout <<" Cette lettre ne figure pas dans le mot !\n"<< endl;
             }
 
         i++;
-    } while(proposition != MotCache[i] && Nbressai <= 12);
+    } while(/*proposition != MotCache[i] &&*/ Nbressai <= 12);
 
   //  auto finPartie = std::chrono::system_clock::now();
    // auto duree = std::chrono::duration_cast<Duree>(finPartie - debutPartie);
@@ -79,7 +83,7 @@ int jouerPartie(char lettre)
     cout << endl;
 
     return nombreTentatives;*/
-    return lettre;
+    return Nbressai;
 }
 
 /*void afficherScores(TableauDeScores& scores) {

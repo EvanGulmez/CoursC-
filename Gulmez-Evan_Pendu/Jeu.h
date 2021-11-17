@@ -6,7 +6,10 @@
 
 //using TableauDeScores = std::array<int, NOMBRE_SCORES>;
 
-void demanderProposition(int& proposition);
+//on déclare la fonction qui nous permettra de récupérer la lettre tapé par le joueur
+void demanderProposition(char
+ proposition);
+
 int jouerPartie(char lettre);
 //void afficherScores(TableauDeScores& scores);
 

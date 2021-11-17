@@ -5,11 +5,12 @@
 #include "Jeu.h"
 
 /*************************************************************************************
+************************        SUIVI DU JEU             *****************************
 Variable: - Mot à Deviner  ("") caractère ('') string
 *************************************************************************************/
 using namespace std;
 
-
+char lettre;
 
 
 int main()
@@ -23,6 +24,7 @@ int main()
 
         switch(choix) {
         case ChoixMenu::JOUER:
+
             jouerPartie(lettre);
            // scores[indiceCourant] = jouerPartie(distribution(generateur));
             //indiceCourant = (indiceCourant + 1) % NOMBRE_SCORES;
