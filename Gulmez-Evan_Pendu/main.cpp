@@ -6,7 +6,8 @@
 
 /*************************************************************************************
 ************************        SUIVI DU JEU             *****************************
-Variable: - Mot à Deviner  ("") caractère ('') string
+Le pendu fonctionne que en mettant le mot en entier et non pas les lettres
+quand on trouve le mot la boucle for s'execute encore trois fois
 *************************************************************************************/
 using namespace std;
 
@@ -15,20 +16,46 @@ char lettre;
 
 int main()
 {
+
+
+
+
+
+    //Boucle pour pouvoir jouer que 12 fois maximum et le jeu s'arrete quand le mot est trouver
+  /*  while(nbrtour <= 11 && parti != true )
+    {
+        for(i=0;i<3;i++)
+        {
+            string mot = &motDevine[i];
+            cout<<mot<<endl;
+            cin>>proposition;
+        if(proposition == &motDevine[i])
+        {
+            motDevine = motCachee;
+            cout<<"Tu as trouve le mot c'est gagne"<<endl;
+            parti = true;
+        }
+        else{
+
+        cout<<"Tu as perdu"<<endl;
+        }
+        }
+        cout<<motCachee<<endl;
+    }*/
+
+
     bool continuer(true);
 
     while(continuer)
-    {
-        afficherMenu();
-        auto choix = demanderChoixMenu();
+   {
+       afficherMenu();
+       auto choix = demanderChoixMenu();
 
         switch(choix) {
         case ChoixMenu::JOUER:
 
             jouerPartie(lettre);
-           // scores[indiceCourant] = jouerPartie(distribution(generateur));
-            //indiceCourant = (indiceCourant + 1) % NOMBRE_SCORES;
-            break;
+          break;
 
         case ChoixMenu::QUITTER:
             cout << "A plus tard !" << endl;
@@ -36,17 +63,18 @@ int main()
             break;
 
         case ChoixMenu::INCORRECT:
-        default:
-            return EXIT_FAILURE;
-        }
+       default:
+          return EXIT_FAILURE;
+      }
 
 
     return EXIT_SUCCESS;
 
 
-    }
 
 
+}
+}
 
 
 
@@ -148,4 +176,4 @@ while (Nbressai <= 12) //&& !gagne(Lettretrouve))
 
     return bonneLettre;
     }*/
-}
+

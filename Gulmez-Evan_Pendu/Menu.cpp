@@ -19,6 +19,9 @@ ChoixMenu demanderChoixMenu() {
 }
 //Fonction qui affiche le menu au début du jeu
 void afficherMenu() {
+
+
+
     cout<<" PPPPP  EEEE   NN   N   DDDD    U   U  "<<endl;
     cout<<" P   P  E      N N  N   D   D   U   U    "<<endl;
     cout<<" P PPP  EEE    N  N N   D   D   U   U   "<<endl;

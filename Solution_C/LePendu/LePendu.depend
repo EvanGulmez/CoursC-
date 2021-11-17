@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1637077220 source:c:\users\abel\documents\boulot\isitech\cpp\cours_cpp\lependu\main.cpp
+	<iostream>
+	<array>
+	<random>
+	<chrono>
+	"menu.h"
+	"constantes.h"
+	"jeu.h"
+
+1637068850 source:c:\users\abel\documents\boulot\isitech\cpp\cours_cpp\lependu\menu.cpp
+	<iostream>
+	"menu.h"
+
+1637068785 c:\users\abel\documents\boulot\isitech\cpp\cours_cpp\lependu\menu.h
+
+1637075131 source:c:\users\abel\documents\boulot\isitech\cpp\cours_cpp\lependu\jeu.cpp
+	<iostream>
+	<array>
+	<string_view>
+	<cstdlib>
+	"jeu.h"
+	"constantes.h"
+
+1637079335 c:\users\abel\documents\boulot\isitech\cpp\cours_cpp\lependu\constantes.h
+	<array>
+	"constantes.h"
+
+1637073018 c:\users\abel\documents\boulot\isitech\cpp\cours_cpp\lependu\jeu.h
+
+1637077222 source:c:\users\ev99\downloads\lependu\main.cpp
+	<iostream>
+	<array>
+	<random>
+	<chrono>
+	"menu.h"
+	"constantes.h"
+	"jeu.h"
+
+1637068786 c:\users\ev99\downloads\lependu\menu.h
+
+1637079336 c:\users\ev99\downloads\lependu\constantes.h
+	<array>
+	"constantes.h"
+
+1637073020 c:\users\ev99\downloads\lependu\jeu.h
+
