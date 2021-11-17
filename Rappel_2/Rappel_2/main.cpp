@@ -5,7 +5,7 @@
 #include <list>
 
 using namespace std;
-
+/*
 int main()
 {
     //séquentiel
@@ -98,4 +98,4 @@ int main()
     return 0;
 
 
-}
+}*/
