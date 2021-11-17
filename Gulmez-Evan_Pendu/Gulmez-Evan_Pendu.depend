@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1637138018 source:c:\ecole-isitech\gulmez-evan_pendu\main.cpp
+	<iostream>
+	<string>
+	"constante.h"
+	"Menu.h"
+
+1637066670 c:\ecole-isitech\gulmez-evan_pendu\constante.h
+
+1637138364 c:\ecole-isitech\gulmez-evan_pendu\menu.h
+
+1637138074 source:c:\ecole-isitech\gulmez-evan_pendu\menu.cpp
+	"Menu.h"
+	<iostream>
+
+1637138317 source:c:\ecole-isitech\gulmez-evan_pendu\jeu.cpp
+	"jeu.h"
+	<iostream>
+
+1637138254 c:\ecole-isitech\gulmez-evan_pendu\jeu.h
+

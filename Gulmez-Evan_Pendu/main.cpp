@@ -1,6 +1,9 @@
 #include <iostream>
 #include <string>
 #include "constante.h"
+#include "Menu.h"
+#include "Jeu.h"
+
 /*************************************************************************************
 Variable: - Mot à Deviner  ("") caractère ('') string
 *************************************************************************************/
@@ -24,6 +27,51 @@ int i(0);
 
 int main()
 {
+    bool continuer(true);
+
+    while(continuer)
+    {
+        afficherMenu();
+        auto choix = demanderChoixMenu();
+
+        switch(choix) {
+        case ChoixMenu::JOUER:
+           // scores[indiceCourant] = jouerPartie(distribution(generateur));
+            //indiceCourant = (indiceCourant + 1) % NOMBRE_SCORES;
+            break;
+
+        case ChoixMenu::QUITTER:
+            cout << "A plus tard !" << endl;
+            continuer = false;
+            break;
+
+        case ChoixMenu::INCORRECT:
+        default:
+            return EXIT_FAILURE;
+        }
+
+
+    return EXIT_SUCCESS;
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
 
     while (Nbressai <= 12 && MotSaisi!= MotCache)
     {
@@ -59,7 +107,7 @@ while (Nbressai <= 12) //&& !gagne(Lettretrouve))
             cout<<"_"<<endl;
             }
             cout<<"tapez une lettre"<<endl;
-            Proposotion=0;
+            Proposotion = 0;
 
            // if (!rechercheLettre(Proposotion, MotCache, Lettretrouve))
         //{

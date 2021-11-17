@@ -10,7 +10,8 @@ void demanderProposition(int& proposition) {
     cin >> proposition;
 }
 
-int jouerPartie(int leJustePrix) {
+int jouerPartie(int leJustePrix)
+{
     auto proposition{0};
     auto nombreTentatives{0};
 
