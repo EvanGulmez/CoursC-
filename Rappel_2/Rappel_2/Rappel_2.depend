@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1637158400 source:c:\ecole-isitech\rappel_2\rappel_2\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<list>
+
