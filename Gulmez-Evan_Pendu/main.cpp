@@ -9,20 +9,7 @@ Variable: - Mot à Deviner  ("") caractère ('') string
 *************************************************************************************/
 using namespace std;
 
-//Lettre saisi par le joueur pour deviner le mot du pendu
-char Proposotion(0) ;
-//Le Mot à deviner du pendu
-string MotCache = ("oui");
-//Le Mot saisi se rempli avec les bonnes lettres que le joueur à proposer pour devenir identique au mot cache
-string MotSaisi ;
-//tableau du MotCache (mot a deviner)
-int Lettretrouve[3];
-//Nombre d'essai avant que la partie soit perdu
-int Nbressai(0);
-// Sert a return une valeur quand la partie est gagné
-int gagne(0);
-//Sert à connaitre la valeur de laquelle on se trouve dans le tableau
-int i(0);
+
 
 
 int main()
@@ -36,6 +23,7 @@ int main()
 
         switch(choix) {
         case ChoixMenu::JOUER:
+            jouerPartie(lettre);
            // scores[indiceCourant] = jouerPartie(distribution(generateur));
             //indiceCourant = (indiceCourant + 1) % NOMBRE_SCORES;
             break;

@@ -1,14 +1,14 @@
 #include "Menu.h"
-
+#include "constante.h"
 #include <iostream>
 
 using namespace std;
 
 ChoixMenu demanderChoixMenu() {
-    char Proposotion;
-    cin >> Proposotion;
-    if(Proposotion == static_cast<char>(ChoixMenu::JOUER) ||  Proposotion == static_cast<char>(ChoixMenu::QUITTER)) {
-        return static_cast<ChoixMenu>(Proposotion);
+    char SaisiChoix;
+    cin >> SaisiChoix;
+    if(SaisiChoix == static_cast<char>(ChoixMenu::JOUER) ||  SaisiChoix == static_cast<char>(ChoixMenu::QUITTER)) {
+        return static_cast<ChoixMenu>(SaisiChoix);
     } else {
         return ChoixMenu::INCORRECT;
     }
