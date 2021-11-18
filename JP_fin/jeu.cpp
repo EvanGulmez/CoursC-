@@ -6,7 +6,8 @@
 
 using namespace std;
 
-void demanderProposition(int& proposition) {
+void demanderProposition(int& proposition)
+{
     cin >> proposition;
 }
 

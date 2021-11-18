@@ -9,11 +9,11 @@
 using namespace std;
 bool Erreur(string nom)
     {
+        //Renvoi eun booléan 1 pour plus de 6 et 0 pour moins de 6
         return nom.size()>=6;
     }
 int main()
 {
-
    vector<string> eleve;
 
    eleve.push_back("Evan");
@@ -27,21 +27,19 @@ int main()
    eleve.push_back("Gregoire");
    eleve.push_back("Nicolas");
 
-
+    //count_if compte si Erreur
    cout<< "Résultat du test: "<<count_if(eleve.begin(), eleve.end(), Erreur)<<endl;
- //   int mycount = count_if (eleve.begin(), eleve.end(), Erreur);
 
-  /* for(vector<string>::iterator it = eleve.begin() ; it != eleve.end();it++)
+    int mycount = count_if (eleve.begin(), eleve.end(), Erreur);
+
+   for(vector<string>::iterator it = eleve.begin() ; it != eleve.end();it++)
    {
-
     cout<<*it<<endl;
+   }
 
-   }*/
+  std::cout << "myvector contains " << mycount  << " odd values.\n";
 
-
- // std::cout << "myvector contains " << mycount  << " odd values.\n";
-  /* map<string, int>noteRPI;
-
+   map<string, int>noteRPI;
 
     noteRPI["Yohann"] = 6;
     noteRPI["Naoufal"] = 16;
@@ -57,9 +55,5 @@ int main()
         pair<string, int>note = *it;
        cout<<"la note de "<<note.first<< " est de: "<< note.second <<endl;
    }
-
-   //*/
-
-
     return 0;
 }

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1637235014 source:c:\ecole-isitech\test\main.cpp
+	<iostream>
+	<list>
+
